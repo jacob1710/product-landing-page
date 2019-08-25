@@ -40,8 +40,9 @@ a.anchor {
     border-radius:2em;
     box-sizing: border-box;
     text-decoration:none;
+    font-size: 15px;
     font-weight:300;
-    color:black;
+    color:rgb(255, 255, 255);
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align:center;
     transition: all 0.2s;
@@ -81,12 +82,19 @@ body{
 #top-header{
     text-align: center;
 }
-
-.text-div{
+.text-row{
+    display: inline;
+    padding: 10px;
+}
+.text-row-icon i {
+    display: none;
+}
+.text-row-div{
     padding: 30px;
 }
 .text-section{
-    text-align: center;
+    text-align: start;
+    margin: 30px 10%;
 }
 .video-section{
     text-align: center;
@@ -144,6 +152,21 @@ body{
     }
     .nav-bar li img{
         vertical-align: bottom;
+    }
+    .text-row{
+        text-align : left;
+        display: flex;
+        padding-top: 50px;
+    }
+    .text-row-div  {
+        padding: 10px;
+        display: inline;
+    }
+    .text-row-icon {
+        display: inline;
+    }
+    .text-row-icon i{
+        display: inline;
     }
    
 }
