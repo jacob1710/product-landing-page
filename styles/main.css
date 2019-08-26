@@ -8,7 +8,7 @@
 a.anchor {
     display: block;
     position: relative;
-    top: -300px;
+    top: -200px;
     visibility: hidden;
 }
 #header-img{
@@ -32,7 +32,7 @@ a.anchor {
 .email-inp-btn{
     text-align: center;
 }
-#submit{
+.submit-btn{
     display:inline-block;
     padding:0.3em 1.2em;
     margin:0 0.1em 0.1em 0;
@@ -45,11 +45,12 @@ a.anchor {
     color:rgb(255, 255, 255);
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align:center;
-    transition: all 0.2s;
+    transition: all 0.5s;
     background-color: #f14e4e;
 }
-#submit:hover{
+.submit-btn:hover{
     border-color: black;
+    background-color: #aa3838;
 }
 .nav-bar ul{
     list-style-type: none;
@@ -98,6 +99,47 @@ body{
 }
 .video-section{
     text-align: center;
+}
+.prices-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.price-container{
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 10px;
+}
+.price-container-header{
+    background-color: rgb(221, 221, 221);
+    height: 50px;
+    text-align: center;
+}
+.price-container-header h2{
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+.price-container-body{
+    padding: 20px;
+    text-align: center;
+}
+.price-container-body h3{
+    padding: 10px;
+    font-size: 1.5em;
+}
+.price-container-body p{
+    padding: 5px;
+}
+.price-container-body button{
+    margin-top: 10px;
 }
 .footer{
     background-color: rgb(221, 221, 221);
@@ -168,7 +210,17 @@ body{
     .text-row-icon i{
         display: inline;
     }
-   
+    .prices-div{
+        flex-flow: row wrap;
+        padding: 20px 10px;
+    }
+    .price-container{
+        width: 32%;
+        height: auto;
+    }
+    .price-container-header h2{
+        padding: 10px 5px;
+    }
 }
   
 @media only screen and (min-width: 768px) {
