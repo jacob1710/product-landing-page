@@ -52,7 +52,7 @@ a.anchor {
     border-color: black;
     background-color: #aa3838;
 }
-.nav-bar ul{
+.nav-bar{
     list-style-type: none;
     position: fixed;
     top: 0;
